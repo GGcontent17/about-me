@@ -1,0 +1,21 @@
+.header { display: contents; }
+.item {
+  position: fixed;
+  z-index: 10;
+  font-size: var(--chrome-size);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--fg);
+  transition: opacity 0.6s var(--ease);
+}
+.loading .item { opacity: 0; }
+.tl { top: var(--pad-y); left: var(--pad-x); }
+.tr { top: var(--pad-y); right: var(--pad-x); }
+.bl { bottom: var(--pad-y); left: var(--pad-x); }
+.br { bottom: var(--pad-y); right: var(--pad-x); }
+.link:hover { opacity: 0.6; }
+.switch { display: flex; gap: 0.4em; color: var(--muted-over-scene); }
+.switch button { letter-spacing: inherit; text-transform: uppercase; }
+.switch button[aria-pressed="true"], .switch button:hover, .switch a:hover { color: var(--fg); }

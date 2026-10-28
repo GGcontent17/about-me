@@ -1,0 +1,24 @@
+:root {
+  --bg: #000;
+  --fg: #f2f2f2;
+  --muted: #7a7a7a;
+  --muted-over-scene: rgba(242, 242, 242, 0.5);
+  --case-bg: #111;
+  --font: "Inter Tight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --pad-x: clamp(20px, 5.3vw, 110px);
+  --pad-y: clamp(20px, 3vw, 62px);
+  --chrome-size: 12px;
+  --list-size: clamp(22px, 2.2vw, 46px);
+  --list-max: min(64vw, 1200px);
+  --case-w: min(78vw, calc(74vh * 1.6));
+  --case-radius: clamp(10px, 1.4vw, 22px);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media (max-width: 700px) {
+  :root {
+    --chrome-size: 11px;
+    --list-size: clamp(20px, 6vw, 28px);
+    --list-max: 92vw;
+    --case-w: 92vw;
+  }
+}

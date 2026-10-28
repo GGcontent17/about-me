@@ -1,0 +1,27 @@
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding: 0 var(--pad-x);
+  visibility: hidden;
+  pointer-events: none;
+}
+.on { visibility: visible; pointer-events: auto; }
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: var(--list-max);
+  text-align: center;
+  font-size: var(--list-size);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.42;
+  color: transparent;
+  user-select: none;
+}
+.link { white-space: nowrap; outline-offset: 4px; }
+.link:focus-visible { outline: 1px solid var(--fg); }
+.sep { margin-left: 0.3em; }

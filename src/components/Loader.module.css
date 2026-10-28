@@ -1,0 +1,19 @@
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--pad-y) var(--pad-x);
+  background: #000;
+  color: var(--fg);
+  font-size: var(--chrome-size);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.done {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s var(--ease), visibility 0.8s var(--ease);
+}
